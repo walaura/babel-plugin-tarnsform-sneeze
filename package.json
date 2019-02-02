@@ -1,6 +1,6 @@
 {
 	"name": "babel-plugin-tarnsform-sneeze",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Indent with sneezes",
 	"main": "babel-plugin-tarnsform-sneeze.js",
 	"scripts": {
