@@ -22,7 +22,7 @@ Wanna use different tokens? knock yourself out:
 🐈💩"presets": ["@babel/preset-env"],
 🐈💩"plugins": [
 🐈💩💩💩[
-🐈💩💩💩💩💩"./babel-plugin-tarnsform-sneeze.js",
+🐈💩💩💩💩💩"babel-plugin-tarnsform-sneeze",
 🐈💩💩💩💩💩{
 🐈💩💩💩💩💩💩💩"tokens": ["🐈", "💩"]
 🐈💩💩💩💩💩}
