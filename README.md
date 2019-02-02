@@ -1,41 +1,32 @@
-# Babel Webpack Starter
+# babel-plugin-tarnsform-sneeze
 
-A starter pack to build JavaScript applications using standards from ES2015, ES2016 & ES2017. It uses webpack, Babel and webpack-dev-server to compile and serve. It is fully compatible with Async/Await as it uses the Babel polyfill.
+Use sneezes to indent your code
 
-### Version
-1.1.0
+<img src="https://pbs.twimg.com/media/DyO8Yh1XQAAXOr1?format=png&name=4096x4096">
 
 ## Usage
 
-### Installation
+Simply install `babel-plugin-tarnsform-sneeze` as a dev dependency and add it as a plugin in your `.babelrc` file.
 
-Install the dependencies
-
-```sh
-$ npm install
+```js
+{
+🤧💨"presets": ["@babel/preset-env"],
+🤧💨"plugins": ["babel-plugin-tarnsform-sneeze"]
+}
 ```
 
-### Serve
-To serve in the browser  - Runs webpack-dev-server
+Wanna use different tokens? knock yourself out:
 
-```sh
-$ npm start
+```js
+{
+🐈💩"presets": ["@babel/preset-env"],
+🐈💩"plugins": [
+🐈💩💩💩[
+🐈💩💩💩💩💩"./babel-plugin-tarnsform-sneeze.js",
+🐈💩💩💩💩💩{
+🐈💩💩💩💩💩💩💩"tokens": ["🤧", "💨"]
+🐈💩💩💩💩💩}
+🐈💩💩💩]
+🐈💩]
+}
 ```
-
-### Build
-Compile and build
-
-```sh
-$ npm run build
-```
-
-## More Info
-
-### Author
-
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
-
-### License
-
-This project is licensed under the MIT License

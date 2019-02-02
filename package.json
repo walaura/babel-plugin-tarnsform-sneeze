@@ -1,23 +1,23 @@
 {
-  "name": "babel_webpack_starter",
-  "version": "1.0.0",
-  "description": "Starter pack for compiling ES6+ apps to ES5",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
-    "build": "webpack --mode production --progress"
-  },
-  "author": "Brad Traversy",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.5",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1",
-    "webpack": "^4.16.1",
-    "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.10"
-  }
+	"name": "babel-plugin-tarnsform-sneeze",
+	"version": "1.0.0",
+	"description": "Indent with sneezes",
+	"main": "babel-plugin-tarnsform-sneeze.js",
+	"scripts": {
+		"test": "echo \"theres no salvation\" && exit 1",
+		"start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --hot"
+	},
+	"author": "Laura the green haired disaster",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/preset-env": "^7.3.1",
+		"babel-loader": "^8.0.5",
+		"webpack": "^4.16.1",
+		"webpack-cli": "^3.0.8",
+		"webpack-dev-server": "^3.1.10"
+	},
+	"dependencies": {
+		"@babel/parser": "^7.3.1"
+	}
 }

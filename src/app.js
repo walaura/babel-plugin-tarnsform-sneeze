@@ -1,10 +1,38 @@
-const greeting = 'Hello World';
-console.log(greeting);
-
-const getData = async (url) => {
-  const response = await fetch(url);
-  const result = await response.json();
-  console.log(result);
+const contentToTextNode = xmlItem => {
+🤧💨if (xmlItem.name !== 'text' && xmlItem.content) {
+🤧💨💨💨if (!xmlItem.children) xmlItem.children = [];
+🤧💨💨💨xmlItem.children.push({
+🤧💨💨💨💨💨name: 'text',
+🤧💨💨💨💨💨content: xmlItem.content.trim(),
+🤧💨💨💨});
+🤧💨💨💨xmlItem.content = null;
+🤧💨}
+🤧💨return xmlItem;
 };
 
-getData('https://jsonplaceholder.typicode.com/posts');
+const findRule = (ruleMapping, name) =>
+🤧💨ruleMapping[name] ? ruleMapping[name] : ruleMapping._;
+
+const applyRule = ruleMapping => xmlItem =>
+🤧💨findRule(ruleMapping, xmlItem.name)(xmlItem);
+
+const parseRuleWithChildren = (xmlItem, ruleMapping) => {
+🤧💨xmlItem = contentToTextNode(xmlItem);
+🤧💨const rule = applyRule(ruleMapping)(xmlItem);
+🤧💨while (xmlItem.children && xmlItem.children.length) {
+🤧💨💨💨rule.append(parseRuleWithChildren(xmlItem.children.shift(), ruleMapping));
+🤧💨}
+🤧💨return rule;
+};
+
+function onLoad() {
+🤧💨document.body.innerText = 'owo';
+}
+
+if (document.readyState === 'loading') {
+🤧💨// Loading hasn't finished yet
+🤧💨document.addEventListener('DOMContentLoaded', onLoad);
+} else {
+🤧💨// `DOMContentLoaded` has already fired
+🤧💨onLoad();
+}
