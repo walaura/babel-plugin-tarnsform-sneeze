@@ -1,11 +1,15 @@
 {
 	"name": "babel-plugin-tarnsform-sneeze",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Indent with sneezes",
 	"main": "babel-plugin-tarnsform-sneeze.js",
 	"scripts": {
 		"test": "echo \"theres no salvation\" && exit 1",
 		"start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --hot"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/walaura/babel-plugin-tarnsform-sneeze"
 	},
 	"author": "Laura the green haired disaster",
 	"license": "MIT",
